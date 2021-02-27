@@ -48,8 +48,7 @@ php artisan key:generate
 Don't forget to run node commands
 
 ```
-npm install
-npm run dev
+npm install && npm run dev
 ```
 
 Start the local development server
