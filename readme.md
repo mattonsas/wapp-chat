@@ -82,9 +82,6 @@ default info in config/database.php is:
 BUT you can change it as you like
 
 ```
-php artisan serve
-```
-```
 
 You can now access the APP at http://127.0.0.1:8000
 
