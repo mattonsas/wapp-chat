@@ -1,4 +1,4 @@
-# Whatsapp chat Oxon
+# Whatsapp-chat Oxon
 Matas
 
 ## Installation
