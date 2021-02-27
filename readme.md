@@ -33,7 +33,10 @@ composer install
 Copy the example env file and **make the required configuration changes of Messagebird lines** in the .env file
 
 ```
+//Linux
 cp .env.example .env
+//Windows
+copy .env.example .env
 ```
 
 Generate a new application key
