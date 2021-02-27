@@ -58,7 +58,8 @@ php artisan serve
 ```
 
 ```
-P.S. 
+P.S.
+```
 
 default info in config/database.php is:
 
