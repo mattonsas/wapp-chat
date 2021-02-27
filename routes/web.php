@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('conversations')->name('conversations.')->group(function () {
+Route::middleware('auth')->prefix('conversations')->name('conversations.')->group(function () {
     Route::get('/', 'ConversationController@index')->name('index');
 
     Route::get('{conversation}', 'ConversationController@show')->name('show');
