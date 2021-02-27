@@ -20,35 +20,28 @@
 				height: 100vh;
 				margin: 0;
 			}
-
 			.full-height {
 				height: 100vh;
 			}
-
 			.flex-center {
 				align-items: center;
 				display: flex;
 				justify-content: center;
 			}
-
 			.position-ref {
 				position: relative;
 			}
-
 			.top-right {
 				position: absolute;
 				right: 10px;
 				top: 18px;
 			}
-
 			.content {
 				text-align: center;
 			}
-
 			.title {
 				font-size: 84px;
 			}
-
 			.links > a {
 				color: #636b6f;
 				padding: 0 25px;
@@ -58,7 +51,6 @@
 				text-decoration: none;
 				text-transform: uppercase;
 			}
-
 			.m-b-md {
 				margin-bottom: 30px;
 			}
@@ -69,9 +61,13 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
                         <a href="{{ route('conversations.index') }}">Conversations</a>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        </form>
+                    @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
