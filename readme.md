@@ -58,8 +58,6 @@ php artisan serve
 ```
 P.S.
 ```
-```
-
 default info in config/database.php is:
 
         'mysql' => [
